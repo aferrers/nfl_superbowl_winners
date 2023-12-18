@@ -2,4 +2,6 @@
 # files to ignore
 .DS_Store
 
+# Files to ignore
+.ipynb_checkpoints/
 
