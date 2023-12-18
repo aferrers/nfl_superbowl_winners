@@ -1,0 +1,12 @@
+Mid_bootcamp_project/
+venv/
+bin/
+etc/
+include/
+lib/
+requirements-dev.in
+requirements.in
+.DS_Store
+
+# python environment configuration file
+pyvenv.cfg
