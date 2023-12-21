@@ -55,3 +55,7 @@ def col_skewness(df, columns):
             print(f'{col} skewness, positive skewed: ',skewness)
         else:
             print(f'{col} skewness, negative skewed: ',skewness)
+
+if __name__ == “__main__”:
+			function1()
+			function2()
