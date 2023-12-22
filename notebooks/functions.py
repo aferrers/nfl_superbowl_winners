@@ -95,8 +95,45 @@ def class_error_metrics_report_m(model_1_name: str, y_test_1: list, y_test_pred_
     report = pd.DataFrame(error_metrics)
     return report
 
+
+# define function to do string operations and separate team name from conference names
+def create_team_conference_df(df: pd.DataFrame) -> pd.DataFrame:
+    '''
+    this function takes a dataframe with team names and conference names and separates it into columns
+    for future mapping
+    input: pd.DataFrame
+    output: pd.DataFrame
+    '''
+    # create new dataframe, select team column
+    team_conference = pd.DataFrame(df['Team']) 
+    
+    # create blank dataframe
+    team_conference_split = pd.DataFrame()
+    
+    # split team & conference
+    team_conference_split = team_conference['Team'].str.rsplit(pat=' (', n=1, expand=True)
+    
+    # rename columns
+    team_conference_split.columns = ['team_name', 'conference_name']
+    
+    # string improvement: replace the closing parenthesis, lowercase
+    team_conference_split['conference_name'] = team_conference_split['conference_name'].str.replace(')', '', n=1)
+    team_conference_split['conference_name']=team_conference_split['conference_name'].str.lower()
+    team_conference_split['team_name']=team_conference_split['team_name'].str.lower()
+
+    return team_conference_split
+
+    
+    
+    
+    
+    
+
+
+
 if __name__ == "__main__":
             normaltest_mult_col()
             ttest_ind_2()
             col_skewness()
             class_error_metrics_report_m()
+            create_team_conference_df()

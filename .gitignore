@@ -5,3 +5,6 @@
 # Files to ignore
 .ipynb_checkpoints/
 
+# pycache directory and files to ignore
+notebooks/__pycache__/
+*.pyc
