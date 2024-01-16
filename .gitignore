@@ -1,8 +1,10 @@
 
 # files to ignore
 .DS_Store
+requirements-dev.in 
+requirements.in 
 
-# Files to ignore
+# folders to ignore
 .ipynb_checkpoints/
 
 # pycache directory and files to ignore
