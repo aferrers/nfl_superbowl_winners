@@ -84,6 +84,7 @@ However, this should be taken with the consideration that the college football p
 For college conferences, particularly Division 1 in this analysis, the trend for super bowl winning players and their college conference showed that the SEC, Big 10 and Pac-12 tended to be the best conferences, indicating their level of higher competition degree, making colleges in these conferences more attractive for NFL execs to fill their rosters with players from there. 
 
 It is also worth considering that the 'Other' for conferences is significantly large, indicating there are super-bowl winning calibre players in other colleges and divisions of college football, as well as abroad in places other than american college football teams. However, due to the limits on this current dataset, we were unable to dig further into this 'Other' category to find out any potential trends outside of Division 1 football conferences.  
+
 ---
 
 ### Next Steps
@@ -92,6 +93,8 @@ It is also worth considering that the 'Other' for conferences is significantly l
 - Look to incorporate playoff game (knockout stages of season) team performance statistics to see if this can help improve the overall accuracy and error metric scores of the prediction models and if any additional X's can be uncovered. 
 - Create model for playoff appearance based off regular season team performance statistics.
 - Introduce player-level statistic aggregations among the positional groups and create a model for predicting player SB appearance and SB Win likelihood based on in-season statistical performance. 
+
+---
 
 ## Data sources:
 The data in this project has been retrieved from pro-football-reference.com, for both NFL and College Football data. 
